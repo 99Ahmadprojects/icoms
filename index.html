@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICOMS - Premium Tech Products</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/03480155058" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <img src="logo1.png" alt="ICOMS Logo" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="productSearch" placeholder="Search products...">
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow"><i class="fas fa-map-marker-alt"></i> Islamabad's Premier IT Partner</p>
+            <h1 class="hero-title">Empowering Your<br><span class="hero-accent">Enterprise.</span></h1>
+            <p class="hero-sub">Innovative IT Solutions & Premium Hardware for Business Excellence cutting-edge infrastructure, POS systems, and dedicated support.</p>
+            <div class="hero-ctas">
+                <a href="#products" class="btn-primary">Explore Products <i class="fas fa-arrow-right"></i></a>
+                <a href="#about" class="btn-ghost">About ICOMS</a>
+            </div>
+        </div>
+        <div class="hero-stats-panel">
+            <div class="container">
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <strong>15+</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="hero-stat">
+                        <strong>1000+</strong>
+                        <span>Products Available</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="hero-stat">
+                        <strong>50+</strong>
+                        <span>Premium Brands</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="hero-stat">
+                        <strong>5+</strong>
+                        <span>Corporate Partners</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════ CATEGORIES ═══════════════ -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Browse by Type</p>
+                <h2 class="section-title">Product Categories</h2>
+            </div>
+            <div class="category-grid">
+                <div class="category-card filter-btn" data-category="all">
+                    <div class="cat-icon-wrap" style="--cat-clr: #2563eb;">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>All Products</h3>
+                    <span class="cat-count">50</span>
+                </div>
+                <div class="category-card filter-btn" data-category="laptop">
+                    <div class="cat-icon-wrap" style="--cat-clr: #7c3aed;">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptops</h3>
+                    <span class="cat-count">10</span>
+                </div>
+                <div class="category-card filter-btn" data-category="computer">
+                    <div class="cat-icon-wrap" style="--cat-clr: #0891b2;">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Computers</h3>
+                    <span class="cat-count">10</span>
+                </div>
+                <div class="category-card filter-btn" data-category="accessory">
+                    <div class="cat-icon-wrap" style="--cat-clr: #d97706;">
+                        <i class="fas fa-mouse"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <span class="cat-count">10</span>
+                </div>
+                <div class="category-card filter-btn" data-category="printer">
+                    <div class="cat-icon-wrap" style="--cat-clr: #059669;">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Printers</h3>
+                    <span class="cat-count">10</span>
+                </div>
+                <div class="category-card filter-btn" data-category="pos">
+                    <div class="cat-icon-wrap" style="--cat-clr: #db2777;">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3>POS Systems</h3>
+                    <span class="cat-count">10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PRODUCTS ═══════════════ -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Our Catalog</p>
+                <h2 class="section-title">All Products</h2>
+                <p class="products-count" id="productsCount">Showing all 50 products</p>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- ── LAPTOPS ── -->
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/1.png" alt="Acer Aspire A515" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Acer Aspire A515 Core i7-1255U, 8 GB RAM, 512 GB SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Acer%20Aspire%20A515" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/2.png" alt="Acer Nitro 5 Gaming" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Acer Nitro 5 Gaming, Core i5-13420H, 8 GB RAM, 512 GB SSD, 6 GB RTX 4050 Graphics, W11, 1 Yr Intl Warranty</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Acer%20Nitro%205" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/3.png" alt="Acer Predator Helious NEO 16" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Acer Predator Helious NEO 16, Core i9-14900HX, 16 GB RAM, 1 TB SSD, 8 GB RTX 4060 Graphics Card, W11, 1 Yr Intl Warranty</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Acer%20Predator%20Helious%20NEO%2016" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/4.png" alt="Apple MacBook Air 2020" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple 2020 MacBook Air 13″ MGN63, 8GB RAM, 256GB SSD, 1 Yr Intl Warranty</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Apple%202020%20MacBook%20Air" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/5.png" alt="Apple MacBook Air 2022 Midnight" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple 2022 MacBook Air 13.6″ Z160008FZ, 16GB RAM, 1TB SSD, 1 Yr Intl Warranty (Midnight)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Apple%202022%20MacBook%20Air" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/6.png" alt="Apple MacBook Pro 2022 13.3" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple 2022 MacBook Pro 13.3″ MNEJ3, 8GB RAM, 512GB SSD, 1 Yr Intl Warranty (Space Gray)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Apple%202022%20MacBook%20Pro" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/7.png" alt="Apple MacBook Pro 2022 14.2 M2 Max" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple 2022 MacBook Pro 14.2″ M2 Max MPHG3, 32GB RAM, 1TB SSD, 1 Yr Intl Warranty (Space Gray)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Apple%202022%20MacBook%20Pro" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/8.png" alt="Apple MacBook Air 2023 15 Midnight" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple 2023 MacBook Air 15″ Z18T001AK, 16GB RAM, 1TB SSD, 1 Yr Intl Warranty (Midnight)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Apple%202023%20MacBook%20Air" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/9.png" alt="Apple MacBook Pro 2023 M3 Pro" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple 2023 MacBook Pro 14.2″ M3 Pro MRX33, 18GB RAM, 512 GB SSD, 1 Yr Intl Warranty (Space Black)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Apple%202023%20MacBook%20Pro" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="laptop">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-laptop">Laptop</span>
+                        <img src="Laptop/10.png" alt="ASUS ROG Strix G16" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>ASUS ROG Strix G16 G614JI, Core i7-13650HX, 16 GB RAM, 512 GB SSD, 16.0″ FHD 165Hz, 8 GB RTX-4070, DOS, 2 Yrs Warranty</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20ASUS%20ROX%20Strix%20G16" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── COMPUTERS ── -->
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/1.png" alt="Kingston NV2 NVMe SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB Kingston NV2 PCIe 4.0 NVMe SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20Kingston%20NV2%20PCIe%204.0%20NVMe%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/2.png" alt="Lexar NM610 NVME SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB Lexar NM610 NVME M2 Disk Drive</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20Lexar%20NM610%20NVME%20M2%20Disk%20Drive" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/3.png" alt="Asus ROG THOR Power Supply" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1000w Asus ROG THOR Gaming Power Supply (Platinum)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201000w%20Asus%20ROG%20THOR%20Gaming%20Power%20Supply%20(Platinum)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/4.png" alt="Asus TUF Gaming Power Supply" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1000w Asus TUF Gaming Power Supply (Gold)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201000w%20Asus%20TUF%20Gaming%20Power%20Supply%20(Gold)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/5.png" alt="Corsair RM1000 Power Supply" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1000w Corsair RM1000 Power Supply</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201000w%20Corsair%20RM1000%20Power%20Supply" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/6.png" alt="ThermalRight SP-1000 Power Supply" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1000w ThermalRight SP-1000 Power Supply 80+ (Platinum)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201000w%20ThermalRight%20SP-1000%20Power%20Supply%2080+%20(Platinum)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/7.png" alt="XPG Core Reactor-II Power Supply" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1000w XPG Core Reactor-II Power Supply 80+ (Gold)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201000w%20XPG%20Core%20Reactor-II%20Power%20Supply%2080+%20(Gold)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/8.png" alt="Hiksemi Wave SATA SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>128 GB Hiksemi Wave SATA SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20128%20GB%20Hiksemi%20Wave%20SATA%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/9.png" alt="RTX 5070 Gigabyte Graphics Card" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>12GB GDDR7 GeForce RTX 5070 Gigabyte Graphics Card</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%2012GB%20GDDR7%20GeForce%20RTX%205070%20Gigabyte%20Graphics%20Card" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="computer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-computer">Computer</span>
+                        <img src="computer/10.png" alt="RTX 5070 PNY Graphics Card" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>12GB GDDR7 GeForce RTX 5070 PNY Graphics Card</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%2012GB%20GDDR7%20GeForce%20RTX%205070%20PNY%20Graphics%20Card" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── PRINTERS ── -->
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/1.png" alt="Avision AD120 Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Avision AD120 Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Avision%20AD120%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/2.png" alt="Canon LaserJet LBP6030" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Canon LaserJet LBP6030 Printer (ch)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Canon%20LaserJet%20LBP6030%20Printer%20(ch)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/3.png" alt="Canon Lide 300 Flatbed Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Canon Lide 300 Flatbed Scanner (Ch)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Canon%20Lide%20300%20Flatbed%20Scanner%20(Ch)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/4.png" alt="Canon PIXMA G1010 Ink Tank Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Canon PIXMA G1010 Ink Tank Printer (Ch)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Canon%20PIXMA%20G1010%20Ink%20Tank%20Printer%20(Ch)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/5.png" alt="Canon PIXMA G3010 All in One" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Canon PIXMA G3010 All in One Ink Tank Printer (Ch)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Canon%20PIXMA%20G3010%20All%20in%20One%20Ink%20Tank%20Printer%20(Ch)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/6.png" alt="CZUR Aura Book Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>CZUR Aura Book &amp; Document Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20CZUR%20Aura%20Book%20&%20Document%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/7.png" alt="CZUR ET16 Plus Book Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>CZUR ET16 Plus Book &amp; Document Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20CZUR%20ET16%20Plus%20Book%20&%20Document%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/8.png" alt="CZUR Lens 1200 Pro Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>CZUR Lens 1200 Pro Portable Document Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20CZUR%20Lens%201200%20Pro%20Portable%20Document%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/9.png" alt="CZUR Shine 800-A3-Pro Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>CZUR Shine 800-A3-Pro Portable Document Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20CZUR%20Shine%20800-A3-Pro%20Portable%20Document%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="printer">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-printer">Printer</span>
+                        <img src="printer/10.png" alt="Epson DS-530 II Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Epson DS-530 II Color Duplex Document Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Epson%20DS-530%20II%20Color%20Duplex%20Document%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── ACCESSORIES ── -->
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/1.png" alt="ADATA SC610 SSD Portable Drive" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB ADATA SC610 SSD Portable Drive</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20ADATA%20SC610%20SSD%20Portable%20Drive" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/2.png" alt="ADATA SD620 Portable SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB ADATA SD620 Portable SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20ADATA%20SD620%20Portable%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/3.png" alt="ADATA SE880 SSD Portable Drive" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB ADATA SE880 SSD Portable Drive</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20ADATA%20SE880%20SSD%20Portable%20Drive" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/4.png" alt="Hiksemi HS-ESSD T100 Portable SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB Hiksemi HS-ESSD T100 Portable SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20Hiksemi%20HS-ESSD%20T100%20Portable%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/5.png" alt="Hiksemi T200N Portable SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB Hiksemi T200N Portable SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20Hiksemi%20T200N%20Portable%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/6.png" alt="Hiksemi T300S Portable SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>1 TB Hiksemi T300S Portable SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%201%20TB%20Hiksemi%20T300S%20Portable%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/7.png" alt="Viewsonic EP1042T Touch Monitor" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>10″ Viewsonic EP1042T Touch E-Poster Gaming LED Monitor</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%2010%22%20Viewsonic%20EP1042T%20Touch%20E-Poster%20Gaming%20LED%20Monitor" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/8.png" alt="Tripod Projector Screen" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>10×7.5 Feet Tripod Projector Screen</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%2010×7.5%20Feet%20Tripod%20Projector%20Screen" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/9.png" alt="Motorized Wall Mount Projector Screen" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>10×8 Feet Motorized Wall Mount Projector Screen (Hashmoo)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%2010×8%20Feet%20Motorized%20Wall%20Mount%20Projector%20Screen%20(Hashmoo)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessory">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-accessory">Accessory</span>
+                        <img src="accessories/10.png" alt="ADATA SC750 2TB Portable SSD" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>2 TB ADATA SC750 Portable SSD</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%202%20TB%20ADATA%20SC750%20Portable%20SSD" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ── POS SYSTEMS ── -->
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/1.png" alt="Black Copper BC-1060 Barcode Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC-1060 Barcode Scanner</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC-1060%20Barcode%20Scanner" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/2.png" alt="Black Copper BC-1210QR Barcode Scanner" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC-1210QR Barcode Scanner + Stand</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC-1210QR%20Barcode%20Scanner%20+%20Stand" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/3.png" alt="Black Copper BC-LP1300 Barcode Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC-LP1300 Barcode Printer</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC-LP1300%20Barcode%20Printer" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/4.png" alt="Black Copper BC85AC G1 Thermal Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC85AC G1 Thermal Receipt Printer (USB)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC85AC%20G1%20Thermal%20Receipt%20Printer%20(USB)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/5.png" alt="Black Copper BC85AC Thermal Printer WiFi" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC85AC Thermal Receipt Printer (USB + Serial + WIFI)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC85AC%20Thermal%20Receipt%20Printer%20(USB%20+%20Serial%20+%20WIFI)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/6.png" alt="Black Copper BC86ac Thermal Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC86ac Thermal Receipt Printer (USB)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC86ac%20Thermal%20Receipt%20Printer%20(USB)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/7.png" alt="Black Copper BC87AC Thermal Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC87AC Thermal Receipt Printer (USB)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC87AC%20Thermal%20Receipt%20Printer%20(USB)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/8.png" alt="Black Copper BC88AC Thermal Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC88AC Thermal Receipt Printer (USB)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC88AC%20Thermal%20Receipt%20Printer%20(USB)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/9.png" alt="Black Copper BC97AC Thermal Printer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Copper BC97AC Thermal Receipt Printer (USB)</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Black%20Copper%20BC97AC%20Thermal%20Receipt%20Printer%20(USB)" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pos">
+                    <div class="product-img-wrap">
+                        <span class="badge badge-pos">POS System</span>
+                        <img src="pos/10.png" alt="Fingerprint Reader Digital Persona URU 4500" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fingerprint Readers Digital Persona URU 4500</h3>
+                        <a href="https://wa.me/03480155058?text=Hi,%20I%20am%20interested%20in%20the%20Fingerprint%20Readers%20Digital%20Persona%20URU%204500" target="_blank" class="wa-btn">
+                            <i class="fab fa-whatsapp"></i> Contact to Buy
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- end .product-grid -->
+            <div id="noProductsMessage" class="no-products-msg" style="display:none;">
+                <i class="fas fa-search"></i>
+                <p>No products found matching your search.</p>
+                <button onclick="document.getElementById('productSearch').value=''; document.querySelector('.category-card[data-category=all]').click();" class="btn-reset">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PARTNERS ═══════════════ -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Our Clients</p>
+                <h2 class="section-title">Trusted Corporate Partners</h2>
+                <p class="section-sub">Proud to supply top-tier hardware to industry-leading organizations.</p>
+            </div>
+            <div class="partner-grid">
+                <div class="partner-card">
+                    <img src="ETS.jpg" alt="Eastern Testing Services - ETS">
+                    <h4>Eastern Testing Services — ETS</h4>
+                </div>
+                <div class="partner-card">
+                    <img src="haidri_nothern.jpg" alt="Haidri Beverages">
+                    <h4>Haidri Beverages (Pvt) Ltd.</h4>
+                </div>
+                <div class="partner-card">
+                    <img src="haidri_nothern.jpg" alt="Northern Bottling">
+                    <h4>Northern Bottling (Pvt) Ltd.</h4>
+                </div>
+                <div class="partner-card">
+                    <img src="akbar_hospital.jpg" alt="Akbar Niazi Hospital">
+                    <h4>Akbar Niazi Hospital</h4>
+                </div>
+                <div class="partner-card">
+                    <img src="sugar.jpg" alt="SW Sugar Mills">
+                    <h4>SW Sugar Mills Pvt. Limited</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Our Story</p>
+                <h2 class="section-title">About ICOMS</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>ICOMS is your premier destination for cutting-edge innovation technology. Founded in 2010, we have built a legacy of over 15 years providing enterprise clients and individual consumers with top-quality electronic devices, reliable infrastructure, and high-performance accessories.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Our Commitment</h3>
+                    <p>Whether you require high-end desktops, state-of-the-art printers, or advanced POS systems to streamline your retail operations, ICOMS has you entirely covered. We partner directly with industry-leading brands for a seamless technology integration journey.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-star"></i></div>
+                    <h3>Our Promise</h3>
+                    <p>Smart decisions meet intelligent answers when you travel the road of technological superiority with ICOMS. Experience dedicated customer service, competitive corporate pricing, and expert guidance every step of the way.</p>
+                </div>
+            </div>
+
+            <div class="ceo-profile">
+                <div class="ceo-img-wrap">
+                    <img src="profile.jpeg" alt="CEO of ICOMS" class="ceo-img">
+                </div>
+                <div class="ceo-details">
+                    <p class="ceo-tag">LEADERSHIP</p>
+                    <h3>Muhammad Talha Asghar</h3>
+                    <p class="ceo-title">Founder &amp; Chief Executive Officer</p>
+                    <blockquote class="ceo-quote">
+                        "Committed to driving innovation and delivering unmatched technological excellence for over 15 years."
+                    </blockquote>
+                    <a href="https://wa.me/03480155058" class="btn-primary" target="_blank" style="margin-top:1.5rem; display:inline-flex;">
+                        <i class="fab fa-whatsapp"></i>&nbsp; Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer>
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <img src="logo1.png" alt="ICOMS Logo" class="footer-logo">
+                <p>Your trusted partner for all IT hardware, enterprise infrastructure, and retail solutions since 2010.</p>
+                <a href="https://wa.me/03480155058" class="footer-wa-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>i-14, Islamabad, Pakistan</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+92 314 5100503</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>asghartalha91@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ICOMS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
