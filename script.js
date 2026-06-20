@@ -1,23 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
+    // === Sticky Navbar Scroll Effect ===
+    const navbar = document.getElementById('navbar');
+    const handleScroll = () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+
     // === Mobile Hamburger Navigation ===
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const links = document.querySelectorAll('.nav-links li a');
-    const navRight = document.querySelector('.nav-right');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
-        if (navRight) navRight.classList.toggle('mobile-visible');
     });
 
     links.forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
-            if (navRight) navRight.classList.remove('mobile-visible');
         });
+    });
+
+    document.addEventListener('click', (e) => {
+        const isClickInsideNav = navLinks.contains(e.target) || hamburger.contains(e.target);
+        if (!isClickInsideNav && navLinks.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
     });
 
     // === Product Interaction Engine (Filtering & Live Search) ===
