@@ -823,7 +823,9 @@ footer {
     min-width: 120px;
     object-fit: contain;
     margin-bottom: 1.5rem;
-    filter: brightness(0) invert(1); 
+    background: var(--surface-white);
+    padding: 6px 10px;
+    border-radius: 8px;
 }
 
 .footer-brand p {
